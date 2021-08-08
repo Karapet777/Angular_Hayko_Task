@@ -1,0 +1,27 @@
+<div class="form-container">
+  <div class="form-container_block-title">
+    <p>Welcome Back !</p>
+    <p>Sign in to continue to taxul.</p>
+  </div>
+  <div class="form-container_block-auth">
+    <small>Email</small>
+    <input
+      class="form-container_block-auth_inp"
+      placeholder="Enter Email"
+      (input)="inputHandlerMail($event)"
+      type="text"
+    />
+    <small>Password</small>
+    <input
+      class="form-container_block-auth_inp"
+      placeholder="Enter Password"
+      type="text"
+      (input)="inputHandlerPassword($event)"
+    />
+    <div class="form-container_block-check">
+      <input type="checkbox" />
+      <small>Remember me</small>
+    </div>
+    <button (click)="saveUser()" class="form-container_btn">Log in</button>
+  </div>
+</div>
